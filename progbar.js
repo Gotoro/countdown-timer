@@ -29,11 +29,6 @@ var x = setInterval(function() {
         document.getElementById("countdown_timer").innerHTML = "EXPIRED";
     }
 
-    days = 365;
-    console.log(days);
-    days = 300;
-    console.log(days);
-
 
     var element = document.getElementById("myprogressBar");
     element.style.width = parseInt((365 - days) / 365 * 100) + '%';
