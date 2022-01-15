@@ -39,7 +39,7 @@ var x = setInterval(function() {
 
     var element = document.getElementById("myprogressBar");
     element.style.width = parseInt((365 - days) / 365 * 100) + '%';
-    element.innerHTML = (52 - weeks) + 'weeks';
+    element.innerHTML = (52 - weeks) + ' weeks';
     console.log(weeks);
     anim_done = true;
 
