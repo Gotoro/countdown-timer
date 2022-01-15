@@ -16,11 +16,11 @@
   display: none;
   color: black;
   background-color: #ff597f;
-  animation: blinker 1s infinite;
+  animation: blinker 2s infinite;
 }
 
 @keyframes blinker {
     from { opacity: 1.0; }
-    0% { opacity: 0.0; }
+    10% { opacity: 0.1; }
     to { opacity: 1.0; }
 }
