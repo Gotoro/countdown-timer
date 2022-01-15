@@ -43,7 +43,7 @@ var x = setInterval(function() {
     console.log(weeks);
     anim_done = true;
 
-    if (inRange(24 - today_hours, 1, 2) || inRange(24 - today_hours, 13, 24)) {
+    if (inRange(24 - today_hours, 1, 2) || inRange(24 - today_hours, 18, 24)) {
         var tosleep = document.getElementById("sleeping");
         tosleep.style.display = "initial";
     }
