@@ -1,10 +1,11 @@
 #Progress_Status {
   width: 100%;
   background-color: #ddd;
+  border-radius: 25px;
 }
 
 #myprogressBar {
-  width: 1%;
+  width: 0%;
   height: 35px;
   background-color: #ff597f;
   text-align: center;
