@@ -3,11 +3,18 @@ var countDownDate = new Date("Dec 21, 2022 06:00:00").getTime();
 var width = 0;
 var anim_done = false;
 
+// return true if in range, otherwise false
+function inRange(x, min, max) {
+    return ((x-min)*(x-max) <= 0);
+}
+
 // Update the count down every 1 second
 var x = setInterval(function() {
 
     // Get today's date and time
     var now = new Date().getTime();
+    var today = new Date();
+    var today_hours = today.getHours();
 
     // Find the distance between now and the count down date
     var distance = countDownDate - now;
@@ -35,6 +42,11 @@ var x = setInterval(function() {
     element.innerHTML = (52 - weeks) + 'weeks';
     console.log(weeks);
     anim_done = true;
+
+    if (inRange(24 - today_hours, 1, 2) || inRange(24 - today_hours, 13, 24)) {
+        var tosleep = document.getElementById("sleeping");
+        tosleep.style.display = "initial";
+    }
 }, 1000);
 
 
